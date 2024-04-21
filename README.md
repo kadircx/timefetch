@@ -14,4 +14,4 @@ You can further customize Timefetch to display exactly what you want. Through th
 
 Currently, Timefetch provides support for almost any environment where Bash is available. Whether you're using Linux, macOS, or another Unix-like system, Timefetch can seamlessly integrate into your terminal workflow.
 
-For more information on dependencies, installation instructions, and additional details, please refer to the [Timefetch GitHub repository](https://github.com/kadircelik62/timefetch).
+For more information on dependencies, installation instructions, and additional details, please refer to the [Timefetch GitHub repository](https://github.com/kadircx/timefetch).
