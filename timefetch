@@ -86,7 +86,18 @@ align_text() {
 # Main loop for time display per second
 while true; do
     clear
-    time_format="%H"
+    # If time format is 12, subtract 12 from the current hour to get 12-hour format.
+    if [ "$use_24_hour_format" = false ]; then
+        current_hour=$(date +%H)
+        if [ "$current_hour" -gt 12 ]; then
+            current_hour=$((current_hour - 12))
+        else 
+            current_hour=$((current_hour))
+        fi
+    time_format="$current_hour"
+    else
+      time_format="%H"
+    fi
     if [ "$show_minutes" = true ]; then
         time_format="$time_format:%M"
     fi
